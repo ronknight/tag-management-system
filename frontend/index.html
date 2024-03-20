@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tag Translation Demo</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <p id="text">This is a <b>test</b> with a <span>tag</span> to translate.</p>
+  <button onclick="translateText()">Translate</button>
+  <script>
+    function translateText() {
+      const text = document.getElementById("text").innerText;
+      translateRequest(text);
+    }
+  </script>
+</body>
+</html>
